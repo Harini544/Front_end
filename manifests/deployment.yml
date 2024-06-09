@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: vgouthamfrontend 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vgouthamfrontend
+  template:
+    metadata:
+      labels:
+        app: vgouthamfrontend 
+    spec:
+      containers:
+        - name: vgouthamfrontend 
+          image: myappregis.azurecr.io/vgouthamfrontend
+          ports:
+          - containerPort: 4200
