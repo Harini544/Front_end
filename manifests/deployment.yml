@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: frontend 
-          image: myapp1978.azurecr.io/frontend
+          image: azureregistry9.azurecr.io/frontend
           ports:
           - containerPort: 4200
